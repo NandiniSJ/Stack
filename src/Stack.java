@@ -3,6 +3,9 @@ public class Stack<T> {
     private Node<T> top;
     private int length;
 
+   public int length(){
+       return length;
+   }
     public void push(T value) {
         Node<T> newNode = new Node<>(value);
         newNode.setNextNode(top);
@@ -19,6 +22,9 @@ public class Stack<T> {
 
     public T peek() {
         return top.getValue();
-//
+    }
+
+    public boolean isEmpty(){
+        return length == 0;
     }
 }
