@@ -1,4 +1,4 @@
-public class Node<T> {
+public class Node<T extends Comparable> {
 
     private T value;
     private Node<T> nextNode;
@@ -23,4 +23,5 @@ public class Node<T> {
     public void setNextNode(Node<T> nextNode) {
         this.nextNode = nextNode;
     }
+
 }

@@ -1,6 +1,6 @@
-public class QueueUsingStack<T> {
+public class QueueUsingStack<T extends Comparable> {
 
-    Stack<T> stack1 = new Stack<>();
+    Stack<T> stack1 = new Stack<T>();
     Stack<T> stack2 = new Stack<>();
     public void enQueue(T x){
         while(!stack1.isEmpty()){
