@@ -19,6 +19,7 @@ public class Main {
         stack.push(18);
 
         System.out.println(stack.getMin());
+        stack.push(10);
         System.out.println(stack.getMin());
 
 
